@@ -1,0 +1,12 @@
+.wptd-fill-button-gradient .wp-block-button__link {  
+  @include gradient-fill;
+  border-radius: var(--child-button--border-radius);
+  border: none !important;
+}
+
+.wptd-fill-button-gradient.wp-block-button:not(.is-style-outline) .wp-block-button__link:hover {
+  &:hover {
+    color: var(--button--color-text) !important;
+    @include gradient-fill-hover;  
+  }      
+}
