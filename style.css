@@ -32,3 +32,17 @@
 	color: var(--button--color-text) !important;
 	background-image: linear-gradient(160deg, var(--global-child-color-deep-red) 0%, var(--global-child-color-deep-blue) 100%) !important;
 }
+
+.wptd-gradient-text,
+.primary-navigation li a:hover,
+.primary-navigation .current-menu-item>a,
+.primary-navigation .current-menu-ancestor>a {
+	background-image: linear-gradient(45deg, var(--global-child-color-deep-blue) 0%, var(--global-child-color-deep-red) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.primary-navigation .current-menu-item>a,
+.primary-navigation .current-menu-ancestor>a {
+	font-weight: bold;
+}
