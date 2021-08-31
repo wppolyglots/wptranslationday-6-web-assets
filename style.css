@@ -16,8 +16,8 @@
 
 :root {
 	/* Colors */
-	--global-child-color-deep-blue: #2271b1;
-	--global-child-color-deep-red: #c9356e;
+	--global-child-color-deep-blue: #2271B1;
+	--global-child-color-deep-red: #C9356E;
 	/* Buttons */
 	--child-button--border-radius: 5px;
 }
