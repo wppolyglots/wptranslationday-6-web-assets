@@ -11,3 +11,24 @@
 */
 
 @import url("../twentytwentyone/style.css");
+
+/* Variables */
+
+:root {
+	/* Colors */
+	--global-child-color-deep-blue: #2271b1;
+	--global-child-color-deep-red: #c9356e;
+	/* Buttons */
+	--child-button--border-radius: 5px;
+}
+
+.wptd-fill-button-gradient .wp-block-button__link {
+	background-image: linear-gradient(160deg, var(--global-child-color-deep-blue) 0%, var(--global-child-color-deep-red) 100%) !important;
+	border-radius: var(--child-button--border-radius);
+	border: none !important;
+}
+
+.wptd-fill-button-gradient.wp-block-button:not(.is-style-outline) .wp-block-button__link:hover:hover {
+	color: var(--button--color-text) !important;
+	background-image: linear-gradient(160deg, var(--global-child-color-deep-red) 0%, var(--global-child-color-deep-blue) 100%) !important;
+}
