@@ -46,3 +46,16 @@
 .primary-navigation .current-menu-ancestor>a {
 	font-weight: bold;
 }
+
+.wptd-gradient-text:focus,
+.primary-navigation li a:focus,
+.primary-navigation .current-menu-item>a:focus,
+.primary-navigation .current-menu-ancestor>a:focus,
+.wptd-gradient-text:hover,
+.primary-navigation li a:hover,
+.primary-navigation .current-menu-item>a:hover,
+.primary-navigation .current-menu-ancestor>a:hover {
+	background: linear-gradient(45deg, var(--global-child-color-deep-blue) 0%, var(--global-child-color-deep-red) 100%) !important;
+	-webkit-text-fill-color: white;
+  text-decoration: unset;
+}
