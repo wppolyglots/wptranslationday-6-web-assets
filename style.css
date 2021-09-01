@@ -71,7 +71,7 @@
 	padding: 18px 50px;
 }
 
-.primary-navigation > div > .menu-wrapper:hover .sub-menu-toggle{
+.primary-navigation .menu-wrapper .menu-item-has-children:hover > .sub-menu-toggle{
 	color: white;
 }
 
