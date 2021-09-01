@@ -1,4 +1,47 @@
+.primary-navigation a {
+	letter-spacing: -0.02em;
+}
+
 .primary-navigation .current-menu-item > a,
 .primary-navigation .current-menu-ancestor > a {
-  font-weight: bold
+	font-weight: 700;
+}
+
+.wptd-gradient-text:focus,
+.primary-navigation li a:focus,
+.primary-navigation .current-menu-item>a:focus,
+.primary-navigation .current-menu-ancestor>a:focus,
+.wptd-gradient-text:hover,
+.primary-navigation li a:hover,
+.primary-navigation .current-menu-item>a:hover,
+.primary-navigation .current-menu-ancestor>a:hover {
+	background: linear-gradient(115deg, var(--global-child-color-blue-50) 0%, var(--global-child-color-pink-50) 100%) !important;
+ 	-webkit-text-fill-color: white;
+	text-decoration: unset;
+}
+
+.primary-navigation > div > .menu-wrapper > li > .sub-menu {
+	padding-top: 0;
+}
+
+.primary-navigation .primary-menu-container > ul > .menu-item > a + .sub-menu-toggle {
+    margin-top: -1px;
+    margin-left: -40px;
+}
+
+.primary-navigation .sub-menu .menu-item > a {
+	padding: 18px 50px;
+}
+
+.primary-navigation .menu-wrapper .menu-item-has-children > a:hover + .sub-menu-toggle,
+.primary-navigation .menu-wrapper .menu-item-has-children > a:focus + .sub-menu-toggle {
+	color: white;
+}
+
+.primary-navigation .primary-menu-container > ul > .menu-item-has-children > a {
+	padding-right: 35px;
+}
+
+.primary-navigation .icon-plus:before, .primary-navigation .icon-minus:before {
+	content: "";
 }

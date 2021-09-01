@@ -9,77 +9,132 @@
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 */
-
 @import url("../twentytwentyone/style.css");
-
 /* Variables */
-
 :root {
-	/* Twenty Twenty-One */
-  	--global--color-background: white;
-	/* Colors */
-	--global-child-color-deep-blue: #2271B1;
-	--global-child-color-deep-red: #C9356E;
-	/* Buttons */
-	--child-button--border-radius: 5px;
+  /* Font Family */
+  --font-headings: "Open Sans";
+  --font-base: "Open Sans";
+  /* Headings */
+  --heading--letter-spacing-h6: -0.02em;
+  --heading--letter-spacing-h5: -0.02em;
+  --heading--letter-spacing-h4: -0.02em;
+  --heading--letter-spacing-h3: -0.02em;
+  --heading--letter-spacing-h2: -0.04em;
+  --heading--letter-spacing-h1: -0.04em;
+  --heading--font-weight-strong: 800;
+  /* Colors */
+  --global--color-background: #F6F7F7;
+  --global-child-color-blue-50: #2271B1;
+  --global-child-color-pink-50: #C9356E;
+  --global-child-color-blue-60: #135E96;
+  --global-child-color-pink-60: #AB235A;
+  /* Buttons */
+  --child-button--border-radius: 5px;
 }
 
+@media only screen and (min-width: 652px) {
+  :root {
+    --global--font-size-xl: 2.5rem;
+    --global--font-size-xxl: 4rem;
+    --global--font-size-xxxl: 6rem;
+  }
+}
 .wptd-fill-button-gradient .wp-block-button__link {
-	background-image: linear-gradient(160deg, var(--global-child-color-deep-blue) 0%, var(--global-child-color-deep-red) 100%) !important;
-	border-radius: var(--child-button--border-radius);
-	border: none !important;
+  background-image: linear-gradient(115deg, var(--global-child-color-blue-50) 0%, var(--global-child-color-pink-50) 100%) !important;
+  border-radius: var(--child-button--border-radius);
+  border: none !important;
 }
 
-.wptd-fill-button-gradient.wp-block-button:not(.is-style-outline) .wp-block-button__link:hover:hover {
-	color: var(--button--color-text) !important;
-	background-image: linear-gradient(160deg, var(--global-child-color-deep-red) 0%, var(--global-child-color-deep-blue) 100%) !important;
+.wptd-fill-button-gradient.wp-block-button:not(.is-style-outline) .wp-block-button__link:hover {
+  color: var(--button--color-text) !important;
+  background-image: linear-gradient(115deg, var(--global-child-color-pink-50) 0%, var(--global-child-color-blue-50) 100%) !important;
+}
+
+.wptd-border-gradient {
+  background-image: linear-gradient(115deg, var(--global-child-color-blue-50) 0%, var(--global-child-color-pink-50) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid;
+  border-radius: 30px;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(115deg, var(--global-child-color-blue-50) 0%, var(--global-child-color-pink-50) 100%);
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: var(--global--font-size-md);
 }
 
 .wptd-gradient-text,
 .primary-navigation li a:hover,
-.primary-navigation .current-menu-item>a,
-.primary-navigation .current-menu-ancestor>a {
-	background-image: linear-gradient(45deg, var(--global-child-color-deep-blue) 0%, var(--global-child-color-deep-red) 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+.primary-navigation .current-menu-item > a,
+.primary-navigation .current-menu-ancestor > a {
+  background-image: linear-gradient(115deg, var(--global-child-color-blue-50) 0%, var(--global-child-color-pink-50) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.primary-navigation .current-menu-item>a,
-.primary-navigation .current-menu-ancestor>a {
-	font-weight: bold;
+.hero-title {
+  background-image: linear-gradient(115deg, var(--global-child-color-blue-60) 0%, var(--global-child-color-pink-60) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: var(--global--font-size-xxl);
+}
+
+.primary-navigation a {
+  letter-spacing: -0.02em;
+}
+
+.primary-navigation .current-menu-item > a,
+.primary-navigation .current-menu-ancestor > a {
+  font-weight: 700;
 }
 
 .wptd-gradient-text:focus,
 .primary-navigation li a:focus,
-.primary-navigation .current-menu-item>a:focus,
-.primary-navigation .current-menu-ancestor>a:focus,
+.primary-navigation .current-menu-item > a:focus,
+.primary-navigation .current-menu-ancestor > a:focus,
 .wptd-gradient-text:hover,
 .primary-navigation li a:hover,
-.primary-navigation .current-menu-item>a:hover,
-.primary-navigation .current-menu-ancestor>a:hover {
-	background: linear-gradient(45deg, var(--global-child-color-deep-blue) 0%, var(--global-child-color-deep-red) 100%) !important;
-	-webkit-text-fill-color: white;
-  	text-decoration: unset;
+.primary-navigation .current-menu-item > a:hover,
+.primary-navigation .current-menu-ancestor > a:hover {
+  background: linear-gradient(115deg, var(--global-child-color-blue-50) 0%, var(--global-child-color-pink-50) 100%) !important;
+  -webkit-text-fill-color: white;
+  text-decoration: unset;
+}
+
+.primary-navigation > div > .menu-wrapper > li > .sub-menu {
+  padding-top: 0;
 }
 
 .primary-navigation .primary-menu-container > ul > .menu-item > a + .sub-menu-toggle {
-    margin-top: -1px;
-    margin-left: -40px;
+  margin-top: -1px;
+  margin-left: -40px;
 }
 
 .primary-navigation .sub-menu .menu-item > a {
-	padding: 18px 50px;
+  padding: 18px 50px;
 }
 
 .primary-navigation .menu-wrapper .menu-item-has-children > a:hover + .sub-menu-toggle,
 .primary-navigation .menu-wrapper .menu-item-has-children > a:focus + .sub-menu-toggle {
-	color: white;
+  color: white;
 }
 
 .primary-navigation .primary-menu-container > ul > .menu-item-has-children > a {
-	padding-right: 35px;
+  padding-right: 35px;
 }
 
 .primary-navigation .icon-plus:before, .primary-navigation .icon-minus:before {
-	content: "";
+  content: "";
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
 }

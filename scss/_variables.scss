@@ -1,11 +1,36 @@
 /* Variables */
+
 :root {
-  
-  /* Colors */
-  --global-child-color-deep-blue: #2271B1;
-  --global-child-color-deep-red: #C9356E;
-  
-  /* Buttons */
-  --child-button--border-radius: 5px;
-  
+	/* Font Family */
+	--font-headings: "Open Sans";
+	--font-base: "Open Sans";
+
+	/* Headings */
+	--heading--letter-spacing-h6: -0.02em;
+	--heading--letter-spacing-h5: -0.02em;
+	--heading--letter-spacing-h4: -0.02em;
+	--heading--letter-spacing-h3: -0.02em;
+	--heading--letter-spacing-h2: -0.04em;
+	--heading--letter-spacing-h1: -0.04em;
+
+	--heading--font-weight-strong: 800;
+
+	/* Colors */
+	--global--color-background: #F6F7F7;
+	--global-child-color-blue-50: #2271B1;
+	--global-child-color-pink-50: #C9356E;
+	--global-child-color-blue-60: #135E96;
+	--global-child-color-pink-60: #AB235A;
+
+	/* Buttons */
+	--child-button--border-radius: 5px;
+
+}
+
+@media only screen and (min-width: 652px) { // Not using the mixin because it's compiled after this file
+	:root {
+		--global--font-size-xl: 2.5rem; // 40px / 16px
+		--global--font-size-xxl: 4rem; // 96px / 16px
+		--global--font-size-xxxl: 6rem; // 144px / 16px
+	}
 }

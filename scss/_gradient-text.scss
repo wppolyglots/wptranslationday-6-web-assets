@@ -2,5 +2,10 @@
 .primary-navigation li a:hover,
 .primary-navigation .current-menu-item > a,
 .primary-navigation .current-menu-ancestor > a {
-  @include gradient-text;
+	@include gradient-text;
+}
+
+.hero-title {
+	@include gradient-text-dark;
+	font-size: var(--global--font-size-xxl);
 }

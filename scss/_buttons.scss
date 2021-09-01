@@ -1,12 +1,26 @@
-.wptd-fill-button-gradient .wp-block-button__link {  
-  @include gradient-fill;
-  border-radius: var(--child-button--border-radius);
-  border: none !important;
+.wptd-fill-button-gradient .wp-block-button__link {
+	@include gradient-fill;
+	border-radius: var(--child-button--border-radius);
+	border: none !important;
 }
 
-.wptd-fill-button-gradient.wp-block-button:not(.is-style-outline) .wp-block-button__link:hover {
-  &:hover {
-    color: var(--button--color-text) !important;
-    @include gradient-fill-hover;  
-  }      
+.wptd-fill-button-gradient.wp-block-button:not(.is-style-outline) .wp-block-button__link {
+	&:hover {
+		color: var(--button--color-text) !important;
+		@include gradient-fill-hover;
+	}
+}
+
+.wptd-border-gradient {
+	@include gradient-text;
+	display: inline-block;
+	padding: 15px 30px;
+	border: 2px solid;
+	border-radius: 30px;
+	border-image-slice: 1;
+	border-width: 2px;
+	border-image-source: linear-gradient(115deg, var(--global-child-color-blue-50) 0%, var(--global-child-color-pink-50) 100%);
+	margin-bottom: 20px;
+	font-weight: 800;
+	font-size: var(--global--font-size-md);
 }
