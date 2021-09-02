@@ -62,6 +62,10 @@
     --responsive--aligndefault-width: min(calc(100vw - 8 * var(--global--spacing-horizontal)), 720px);
   }
 }
+.site-main {
+  padding-bottom: calc(4 * var(--global--spacing-vertical));
+}
+
 .wp-block-button .wp-block-button__link {
   border-radius: var(--child-button--border-radius);
   border: none !important;
