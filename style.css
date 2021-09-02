@@ -131,6 +131,10 @@
   content: "";
 }
 
+.wp-block-social-links a:focus {
+  background: none !important; 
+}
+  
 .site-footer .site-info {
   position: relative;
   z-index: 1; 
