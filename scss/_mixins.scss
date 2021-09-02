@@ -33,3 +33,18 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
+@mixin gradient-single-line($weight: 3px) {
+  position: relative; 
+  z-index: 1;
+  &:before {
+    content: '';
+		display: block;
+    width: 100%;		
+    position: absolute;
+		z-index: 2;
+    height: $weight;		
+    top: -$weight;
+    @include gradient-fill;
+  }
+}
