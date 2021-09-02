@@ -1,3 +1,14 @@
+html {
+	overflow-x: hidden;
+}
+
 .site-main {
 	padding-bottom: calc(4 * var(--global--spacing-vertical));
+}
+
+@media only screen and (max-width: 481px) {
+
+	.site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo img {
+		max-height: var(--branding--logo--max-height-mobile);
+	}
 }

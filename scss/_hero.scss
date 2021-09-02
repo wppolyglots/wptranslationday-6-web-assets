@@ -1,0 +1,19 @@
+.hero-title {
+	@include gradient-text-dark;
+	font-size: var(--global--font-size-xxl);
+	line-height: var(--global--line-height-page-title);
+	margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 481px) {
+	.hero-title {
+		font-size: 42px;
+		text-align: left;
+		padding-top: 50px;
+	}
+
+	.hero-subtitle {
+		font-size: var(--global--font-size-lg);
+		text-align: left;
+	}
+}

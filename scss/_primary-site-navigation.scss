@@ -1,3 +1,9 @@
+.primary-navigation li a:hover,
+.primary-navigation .current-menu-item > a,
+.primary-navigation .current-menu-ancestor > a {
+	@include gradient-text;
+}
+
 .primary-navigation a {
 	letter-spacing: -0.02em;
 }

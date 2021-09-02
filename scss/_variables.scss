@@ -31,6 +31,12 @@
 	--button--font-size: var(--global--font-size-sm);
 	--button--font-weight: 700;
 
+	/* Header */
+	--branding--logo--max-width: 220px;
+	--branding--logo--max-height: 120px;
+	--branding--logo--max-width-mobile: 150px;
+	--branding--logo--max-height-mobile: 80px;
+
 }
 
 @media only screen and (min-width: 652px) { // Not using the mixin because it's compiled after this file

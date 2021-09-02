@@ -1,0 +1,30 @@
+.wapuu {
+	position: relative;
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 430px;
+		width: 720px;
+		height: auto;
+	}
+}
+
+@media only screen and (max-width: 821px) {
+	.wapuu img {
+		left: 380px;
+		width: 600px;
+	}
+}
+
+@media only screen and (max-width: 481px) {
+	.wapuu {
+		margin-bottom: 60px;
+
+		img {
+			position: relative;
+			left: 8%;
+			width: 80%;
+		}
+	}
+}

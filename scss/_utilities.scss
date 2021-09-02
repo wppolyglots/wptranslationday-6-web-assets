@@ -33,3 +33,9 @@
 .wptd-gradient-text-dark {
 	@include gradient-text-dark;
 }
+
+@media only screen and (max-width: 481px) {
+	.mobile-text-left {
+		text-align: left;
+	}
+}
