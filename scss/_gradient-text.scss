@@ -8,4 +8,5 @@
 .hero-title {
 	@include gradient-text-dark;
 	font-size: var(--global--font-size-xxl);
+	margin-bottom: 10px;
 }

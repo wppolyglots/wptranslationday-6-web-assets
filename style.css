@@ -15,6 +15,8 @@
   /* Font Family */
   --font-headings: "Open Sans";
   --font-base: "Open Sans";
+  /* Line Height */
+  --global--line-height-body: 1.5;
   /* Headings */
   --heading--letter-spacing-h6: -0.02em;
   --heading--letter-spacing-h5: -0.02em;
@@ -24,6 +26,7 @@
   --heading--letter-spacing-h1: -0.04em;
   --heading--font-weight-strong: 800;
   /* Colors */
+  --global--color-dark-gray: #1D2327;
   --global--color-background: #F6F7F7;
   --global-child-color-blue-50: #2271B1;
   --global-child-color-pink-50: #C9356E;
@@ -31,6 +34,8 @@
   --global-child-color-pink-60: #AB235A;
   /* Buttons */
   --child-button--border-radius: 5px;
+  --button--font-size: var(--global--font-size-sm);
+  --button--font-weight: 700;
 }
 
 @media only screen and (min-width: 652px) {
@@ -40,15 +45,24 @@
     --global--font-size-xxxl: 6rem;
   }
 }
-.wptd-fill-button-gradient .wp-block-button__link {
-  background-image: linear-gradient(115deg, var(--global-child-color-blue-50) 0%, var(--global-child-color-pink-50) 100%) !important;
+.wp-block-button .wp-block-button__link {
   border-radius: var(--child-button--border-radius);
   border: none !important;
+  font-weight: 700;
+}
+
+.wptd-fill-button-white .wp-block-button__link {
+  background-color: var(--global--color-white);
+  color: var(--global--color-dark-gray);
+}
+
+.wptd-fill-button-gradient .wp-block-button__link {
+  background-image: linear-gradient(115deg, var(--global-child-color-blue-50) 0%, var(--global-child-color-pink-50) 100%) !important;
 }
 
 .wptd-fill-button-gradient.wp-block-button:not(.is-style-outline) .wp-block-button__link:hover {
   color: var(--button--color-text) !important;
-  background-image: linear-gradient(115deg, var(--global-child-color-pink-50) 0%, var(--global-child-color-blue-50) 100%) !important;
+  background-image: linear-gradient(115deg, var(--global-child-color-blue-60) 0%, var(--global-child-color-pink-60) 100%) !important;
 }
 
 .wptd-border-gradient {
@@ -81,6 +95,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: var(--global--font-size-xxl);
+  margin-bottom: 10px;
 }
 
 .primary-navigation a {
@@ -132,23 +147,55 @@
 }
 
 .wp-block-social-links a:focus {
-  background: none !important; 
-}
-  
-.site-footer .site-info {
-  position: relative;
-  z-index: 1; 
+  background: none !important;
 }
 
+.site-footer {
+  max-width: none;
+  background-color: var(--global--color-white);
+  padding-bottom: 0;
+}
+.site-footer .widget-area {
+  grid-template-columns: none;
+  margin-top: var(--global--spacing-vertical);
+  text-align: center;
+}
+.site-footer .widget-area .widget {
+  margin-top: 0;
+}
+.site-footer .widget-area h4 {
+  display: inline;
+  margin-top: 0;
+  background-image: linear-gradient(115deg, var(--global-child-color-blue-60) 0%, var(--global-child-color-pink-60) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  font-size: var(--global--font-size-lg);
+}
+.site-footer .site-info {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: var(--global-spacing-vertical);
+  max-width: var(--responsive--alignwide-width);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
+}
 .site-footer .site-info:before {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   position: absolute;
   z-index: 2;
   height: 3px;
   top: -3px;
-  background-image: linear-gradient(115deg, var(--global-child-color-blue-50) 0%, var(--global-child-color-pink-50) 100%) !important; 
+  background-image: linear-gradient(115deg, var(--global-child-color-blue-50) 0%, var(--global-child-color-pink-50) 100%) !important;
+}
+
+.footer-navigation {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .mt-0 {
@@ -157,4 +204,36 @@
 
 .mb-0 {
   margin-bottom: 0;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.wptd-gradient-text {
+  background-image: linear-gradient(115deg, var(--global-child-color-blue-50) 0%, var(--global-child-color-pink-50) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wptd-gradient-text-dark {
+  background-image: linear-gradient(115deg, var(--global-child-color-blue-60) 0%, var(--global-child-color-pink-60) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

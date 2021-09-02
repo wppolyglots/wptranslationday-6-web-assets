@@ -5,6 +5,9 @@
 	--font-headings: "Open Sans";
 	--font-base: "Open Sans";
 
+	/* Line Height */
+	--global--line-height-body: 1.5;
+
 	/* Headings */
 	--heading--letter-spacing-h6: -0.02em;
 	--heading--letter-spacing-h5: -0.02em;
@@ -16,6 +19,7 @@
 	--heading--font-weight-strong: 800;
 
 	/* Colors */
+	--global--color-dark-gray: #1D2327;
 	--global--color-background: #F6F7F7;
 	--global-child-color-blue-50: #2271B1;
 	--global-child-color-pink-50: #C9356E;
@@ -24,6 +28,8 @@
 
 	/* Buttons */
 	--child-button--border-radius: 5px;
+	--button--font-size: var(--global--font-size-sm);
+	--button--font-weight: 700;
 
 }
 

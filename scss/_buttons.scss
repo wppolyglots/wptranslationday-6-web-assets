@@ -1,7 +1,16 @@
-.wptd-fill-button-gradient .wp-block-button__link {
-	@include gradient-fill;
+.wp-block-button .wp-block-button__link {
 	border-radius: var(--child-button--border-radius);
 	border: none !important;
+	font-weight: 700;
+}
+
+.wptd-fill-button-white .wp-block-button__link {
+	background-color: var(--global--color-white);
+	color: var(--global--color-dark-gray);
+}
+
+.wptd-fill-button-gradient .wp-block-button__link {
+	@include gradient-fill;
 }
 
 .wptd-fill-button-gradient.wp-block-button:not(.is-style-outline) .wp-block-button__link {
