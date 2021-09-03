@@ -39,3 +39,21 @@
 		text-align: left;
 	}
 }
+
+body.cookies-not-set {
+  
+  .site-footer {
+
+    padding-bottom: 86px;
+
+    @media only screen and (max-width: 978px) {
+      padding-bottom: 106px;
+    }
+
+    @media only screen and (max-width: 540px) {
+      padding-bottom: 130px;
+    }
+    
+  }
+  
+}
