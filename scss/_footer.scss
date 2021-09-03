@@ -36,3 +36,37 @@
 	margin-top: 0;
 	margin-bottom: 0;
 }
+
+.footer-navigation a {
+	
+  text-decoration: none;
+	
+	span {
+		display: block;
+    text-align: left;
+    text-decoration: underline;
+    text-underline-offset: 1px;
+    font-weight: var(--heading--font-weight-strong);   
+	}
+	
+	&:hover {
+		
+    text-decoration: none !important;
+    
+		span {
+
+		}
+		
+	}
+	
+	.link-label {
+    display: block;
+		line-height: 1;
+    margin-top: -7px;
+    font-weight: var(--heading--font-weight);
+    font-size: 85%;
+    text-decoration: underline;
+    text-decoration-color: #fff;
+	}
+	
+}
