@@ -274,6 +274,7 @@ html {
 
 .footer-navigation a {
   text-decoration: none;
+  display: inline-block;
 }
 .footer-navigation a span {
   display: block;
