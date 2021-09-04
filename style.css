@@ -67,6 +67,14 @@
     --responsive--aligndefault-width: min(calc(100vw - 8 * var(--global--spacing-horizontal)), 720px);
   }
 }
+/** 
+ * Page title font size on smaller screen
+ */ 
+@media only screen and (max-width: 760px) {
+	:root {
+		--global--font-size-page-title: var(--global--font-size-xl);
+	}
+}
 html {
   overflow-x: hidden;
 }
