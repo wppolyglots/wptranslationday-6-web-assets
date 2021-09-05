@@ -33,6 +33,28 @@ $team-field-spacing-v-2x: calc( 0.666 * var(--global--spacing-vertical) );
   
 }
 
+.wp-block-columns .wp-block-column.team-col-wrap {
+
+  > ul.wp-block-social-links {
+    
+    li.wp-social-link {
+      background-color: #28303d;
+      color: #fff;
+      padding: 0;
+    }
+    
+    li.wp-social-link a.wp-block-social-link-anchor {
+      
+    }
+    
+    &.wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor:focus svg {
+      fill: var(--global--color-white);
+    }    
+    
+  }
+
+}
+
 // Responsive team column
 @media only screen and (min-width: 782px) and (max-width: 992px) {
 

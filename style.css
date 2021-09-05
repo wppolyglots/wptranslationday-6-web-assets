@@ -254,6 +254,14 @@ html {
   margin-top: 0;
   margin-bottom: var(--global--spacing-vertical);
 }
+.wp-block-columns .wp-block-column.team-col-wrap>ul.wp-block-social-links li.wp-social-link {
+	background-color: #28303d;
+	color: #fff;
+	padding: 0;
+}
+.wp-block-columns .wp-block-column.team-col-wrap>ul.wp-block-social-links.wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor:focus svg {
+	fill: var(--global--color-white);
+}
 .site-footer {
   max-width: none;
   background-color: var(--global--color-white);
