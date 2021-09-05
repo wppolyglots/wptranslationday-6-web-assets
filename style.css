@@ -75,8 +75,8 @@
 		--global--font-size-page-title: var(--global--font-size-xl);
 	}
 }
-html {
-  overflow-x: hidden;
+html, body {
+	overflow-x: hidden;
 }
 
 .site-main {
