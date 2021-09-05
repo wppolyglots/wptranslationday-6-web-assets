@@ -232,6 +232,28 @@ html {
     width: 80%;
   }
 }
+.wp-block-columns .wp-block-column.team-col-wrap .team-name {
+  margin-top: calc(0.333 * var(--global--spacing-vertical));
+  margin-bottom: calc(0.333 * var(--global--spacing-vertical));
+}
+.wp-block-columns .wp-block-column.team-col-wrap .team-country {
+  margin-top: 0;
+  margin-bottom: calc(0.333 * var(--global--spacing-vertical));
+}
+.wp-block-columns .wp-block-column.team-col-wrap .team-profile-image {
+  margin-bottom: calc(0.333 * var(--global--spacing-vertical));
+}
+.wp-block-columns .wp-block-column.team-col-wrap .team-profile-image img {
+  border-radius: 50%;
+}
+.wp-block-columns .wp-block-column.team-col-wrap .team-profile-desc {
+  margin-top: calc(0.666 * var(--global--spacing-vertical));
+  margin-bottom: calc(0.666 * var(--global--spacing-vertical));
+}
+.wp-block-columns .wp-block-column.team-col-wrap > ul.wp-block-social-links {
+  margin-top: 0;
+  margin-bottom: var(--global--spacing-vertical);
+}
 .site-footer {
   max-width: none;
   background-color: var(--global--color-white);
