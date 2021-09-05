@@ -232,30 +232,6 @@ html {
     width: 80%;
   }
 }
-.team-col-wrap .team-profile-image img {
-  border-radius: 50%;
-}
-.team-col-wrap .team-profile-desc {
-  background-image: linear-gradient(
-    115deg,
-    var(--global-child-color-blue-50) 0%,
-    var(--global-child-color-pink-50) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.team-col-wrap
-  ul.wp-block-social-links.wp-block-social-links
-  .wp-block-social-link
-  .wp-block-social-link-anchor:focus
-  svg {
-  fill: var(--global--color-white);
-}
-.team-col-wrap ul.wp-block-social-links li.wp-social-link {
-  background-color: #28303d;
-  color: #fff;
-  padding: 0;
-}
 .site-footer {
   max-width: none;
   background-color: var(--global--color-white);
