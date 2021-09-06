@@ -75,8 +75,8 @@
 		--global--font-size-page-title: var(--global--font-size-xl);
 	}
 }
-html {
-  overflow-x: hidden;
+html, body {
+	overflow-x: hidden;
 }
 
 .site-main {
@@ -231,6 +231,36 @@ html {
     left: 8%;
     width: 80%;
   }
+}
+.wp-block-columns .wp-block-column.team-col-wrap .team-name {
+  margin-top: calc(0.333 * var(--global--spacing-vertical));
+  margin-bottom: calc(0.333 * var(--global--spacing-vertical));
+}
+.wp-block-columns .wp-block-column.team-col-wrap .team-country {
+  margin-top: 0;
+  margin-bottom: calc(0.333 * var(--global--spacing-vertical));
+}
+.wp-block-columns .wp-block-column.team-col-wrap .team-profile-image {
+  margin-bottom: calc(0.333 * var(--global--spacing-vertical));
+}
+.wp-block-columns .wp-block-column.team-col-wrap .team-profile-image img {
+  border-radius: 50%;
+}
+.wp-block-columns .wp-block-column.team-col-wrap .team-profile-desc {
+  margin-top: calc(0.666 * var(--global--spacing-vertical));
+  margin-bottom: calc(0.666 * var(--global--spacing-vertical));
+}
+.wp-block-columns .wp-block-column.team-col-wrap > ul.wp-block-social-links {
+  margin-top: 0;
+  margin-bottom: var(--global--spacing-vertical);
+}
+.wp-block-columns .wp-block-column.team-col-wrap>ul.wp-block-social-links li.wp-social-link {
+	background-color: #28303d;
+	color: #fff;
+	padding: 0;
+}
+.wp-block-columns .wp-block-column.team-col-wrap>ul.wp-block-social-links.wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor:focus svg {
+	fill: var(--global--color-white);
 }
 .site-footer {
   max-width: none;
