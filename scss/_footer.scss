@@ -72,6 +72,14 @@
 	
 }
 
+@media only screen and (min-width: 961px) {
+  
+  .footer-navigation .footer-navigation-wrapper > li:first-child > a {
+    padding-left: 0;
+  }
+  
+}
+
 @media only screen and (max-width: 960px) {
   
   .site-footer .site-info {
