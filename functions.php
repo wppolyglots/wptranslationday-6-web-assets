@@ -15,13 +15,3 @@ function wptd_enqueue_styles() {
         $theme->get('Version') // this only works if you have Version in the style header
     );
 }
-
-// Remove 'category' base prefix from URL
-add_filter( 'user_trailingslashit', 'remove_category', 100, 2 );
-function remove_category( $string, $type )  {
-	if ( $type != 'single' && $type == 'category' && ( strpos( $string, 'category' ) !== false ) ) {
-		$url_without_category = str_replace( "/category/", "/", $string );
-		return trailingslashit( $url_without_category );
-	}
-	return $string;
-}
