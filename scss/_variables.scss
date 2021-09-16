@@ -21,6 +21,9 @@
 	/* Colors */
 	--global--color-dark-gray: #1D2327;
 	--global--color-background: #F6F7F7;
+
+	--global-child-color-blue-40: #3582C4;
+	--global-child-color-pink-40: #E34C84;
 	--global-child-color-blue-50: #2271B1;
 	--global-child-color-pink-50: #C9356E;
 	--global-child-color-blue-60: #135E96;
@@ -68,9 +71,9 @@
 	}
 }
 
-/** 
+/**
  * Page title font size on smaller screen
- */ 
+ */
 @media only screen and (max-width: 760px) {
 	:root {
 		--global--font-size-page-title: var(--global--font-size-xl);

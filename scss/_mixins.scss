@@ -35,16 +35,16 @@
 }
 
 @mixin gradient-single-line($weight: 3px) {
-  position: relative;
-  z-index: 1;
-  &:before {
-    content: '';
+	position: relative;
+	z-index: 1;
+	&:before {
+		content: '';
 		display: block;
-    width: 100%;
-    position: absolute;
+		width: 100%;
+		position: absolute;
 		z-index: 2;
-    height: $weight;
-    top: -$weight;
-    @include gradient-fill;
-  }
+		height: $weight;
+		top: -$weight;
+		@include gradient-fill;
+	}
 }

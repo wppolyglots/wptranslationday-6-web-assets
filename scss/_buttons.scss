@@ -2,21 +2,81 @@
 	border-radius: var(--child-button--border-radius);
 	border: none !important;
 	font-weight: 700;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	&::before, &::after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+	}
+	&::after {
+		height: 100%;
+		left: 0;
+		top: 0;
+		transform: skew(115deg);
+		transition-duration: 0.6s;
+		transform-origin: top left;
+		width: 0;
+	}
+	&:hover::after {
+		height: 100%;
+		width: 170%;
+	}
 }
 
+.wp-block-button .wp-block-button__link.has-white-background-color,
 .wptd-fill-button-white .wp-block-button__link {
-	background-color: var(--global--color-white);
+	background-color: var(--global--color-white) !important;
 	color: var(--global--color-dark-gray);
+	&::before {
+		background-color: rgba(0,0,0,0.01) !important;
+	}
+	&::after {
+		background-color: var(--global--color-white) !important;
+	}
+	&:hover {
+		@include gradient-text-dark;
+		background-color: var(--global--color-white) !important;
+	}
+}
+
+.wp-block-button .wp-block-button__link.has-dark-gray-background-color,
+.wptd-fill-button-dark-gray .wp-block-button__link {
+	background-color: var(--global--color-dark-gray) !important;
+	color: var(--global--color-white) !important;
+	&::before {
+		background-color: var(--global--color-dark-gray) !important;
+	}
+	&::after {
+		background-color: var(--global--color-black) !important;
+	}
+	&:hover {
+		background-image: linear-gradient(
+			115deg,
+			var(--global-child-color-blue-40) 0%,
+			var(--global-child-color-pink-40) 100%,
+		);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
 }
 
 .wptd-fill-button-gradient .wp-block-button__link {
 	@include gradient-fill;
-}
-
-.wptd-fill-button-gradient.wp-block-button:not(.is-style-outline) .wp-block-button__link {
-	&:hover {
-		color: var(--button--color-text) !important;
+	&::before {
+		@include gradient-fill;
+	}
+	&::after {
 		@include gradient-fill-hover;
+	}
+	&:hover {
+		background-clip: text;
+		-webkit-text-fill-color: var(--global--color-white);
 	}
 }
 
