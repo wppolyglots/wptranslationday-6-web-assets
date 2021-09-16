@@ -12,3 +12,22 @@ html, body {
 		max-height: var(--branding--logo--max-height-mobile);
 	}
 }
+
+@media only screen and (min-width: 822px) {
+
+	.site-header {
+		padding-top: var(--global--spacing-vertical);
+		padding-bottom: var(--global--spacing-vertical);
+	}
+}
+
+.page-header,
+.singular .entry-header {
+	border-bottom: none;
+	text-align: center;
+	margin-bottom: var(--global--spacing-vertical);
+	h1 {
+		display: inline-block;
+		@include gradient-text-dark;
+	}
+}
